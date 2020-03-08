@@ -35,7 +35,7 @@ const element = (
 );
 
 
-/* {  Props  } - Utlização */
+/* {  Props  } - Utilização */
 
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
@@ -45,5 +45,55 @@ const element = <Welcome name="Leticia Campos"/>;
 
 ReactDOM.render(
     element,
+    document.getElementById("root")
+);
+
+
+/* {  Class Component  } */
+
+class Person extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            myState: true
+        }
+    }
+
+    render() {
+        return(
+            <div>
+                <h1>Hello Person</h1>
+            </div>
+        );
+    }
+}
+
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
+}
+
+
+/* {  Class Component  } - Controlando estados */
+
+class Clock extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
+
+    render() {
+        return(
+            <div>
+                <h1>Hello, word!</h1>
+                <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <Clock />,
     document.getElementById("root")
 );
