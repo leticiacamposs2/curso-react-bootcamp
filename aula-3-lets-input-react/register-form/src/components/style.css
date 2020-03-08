@@ -1,0 +1,14 @@
+.container {
+  padding: 8px;
+}
+
+.form-input-container {
+  margin-bottom: 12px;
+}
+
+.input {
+  font-size: 12px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+  display: block;
+}
