@@ -1,0 +1,13 @@
+{
+  "name": "serverless-workstations-dynamodb",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "aws-sdk": "latest",
+    "serverless": "latest"
+  },
+  "devDependencies": {
+    "serverless-domain-manager": "^3.2.6",
+    "serverless-python-requirements": "^4.3.0"
+  }
+}

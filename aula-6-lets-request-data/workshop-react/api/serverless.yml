@@ -1,0 +1,69 @@
+service: serverless-workstations
+
+plugins:
+
+provider:
+  name: aws
+  stage: jsday
+  runtime: nodejs10.x
+  profile: default
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/jsday_feira"
+
+package:
+  include:
+    - ./*.js
+    - ./node_modules
+
+functions:
+  list: #R
+    handler: list.list
+    events:
+      - http:
+          path: /list
+          method: get
+          cors: true
+
+  query: 
+    # Payload: {"macaddress": "01:01:01:01:01"}
+    handler: query.query
+    events:
+      - http:
+          path: /query
+          method: post
+          cors: true
+
+  insert: #C 
+    # Payload: {"macaddress": "01:01:01:01:01", "hostname": "nt-123-dev"}
+    handler: create.create
+    events:
+      - http:
+          path: /create
+          method: post
+          cors: true
+
+  update: #C 
+    # Payload: {"macaddress": "01:01:01:01:01", "hostname": "nt-123-dev"}
+    handler: update.update
+    events:
+      - http:
+          path: /update
+          method: post
+          cors: true
+
+  delete: #D 
+    # Payload: {"macaddress": "01:01:01:01:01"}
+    handler: delete.delete
+    events:
+      - http:
+          path: /delete
+          method: post
+          cors: true
