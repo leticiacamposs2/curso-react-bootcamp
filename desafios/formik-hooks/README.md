@@ -12,7 +12,7 @@ Criar um formulário utilizando formik hooks conforme o artigo: [Formik hooks �
 
 ## ⚠️ Pré-requisitos:
 
-1. Node.js e NPM instalado (versão 10.x ou acima)
+1. Node.js e Yarn instalado
 
 ****
 
@@ -31,13 +31,13 @@ cd curso-react-bootcamp/desafios/formik-hooks
 3. Instale todas as dependências do projeto
 
 ```sh
-npm install
+yarn install
 ```
 
 4. Rode o projeto na sua máquina
 
 ```sh
-npm start
+yarn start
 ```
 
 5. Abre o navegador e visualize o projeto
