@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'semantic-react-ui'
 
 function ExampleComponent(props) {
@@ -7,20 +7,14 @@ function ExampleComponent(props) {
     const [email, setEmail] = useState("")
     const [name, setName] = useState(props.name)
 
-    componentDidMount() {
+    useEffect(() => {
 
-        /* algum fetch de dado que a gente quer rodar somente uma vez
-        ....................
-        */
-    }
+    /* algum fetch de dado que a gente quer rodar somente uma vez
+    ....................
+    */    
+   }, [])
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value
-        })
-    }
-
-    handleSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         /* executa alguma request 
@@ -28,8 +22,7 @@ function ExampleComponent(props) {
         */
     }
 
-
-    toggleShowForm = (e) => {
+    const toggleShowForm = (e) => {
         this.setState({
             showForm: !setShowForm,
         })
@@ -38,7 +31,7 @@ function ExampleComponent(props) {
     // RENDERS ------------------------------
 
     const renderForm = () => {
-        return <Form onSubmit={this.handleSubmit}>
+        return <Form onSubmit={handleSubmit}>
             <Form.Input name="name" value={name} onChange={e => setName(e.target.value)} />
             <Form.Input name="email" value={email} onChange={e => setEmail(e.target.value)} />
             <Form.Button type="submit">Submit!</Form.Button>
@@ -46,17 +39,16 @@ function ExampleComponent(props) {
     }
 
     // RENDER --------------------------------
-        return (
-            <div >
-                {showForm ? this.renderForm()
-                    : <Fragment>
-                        <h3>Hi, {this.state.name}</h3>
-                        <Button onClick={toggleShowForm} >Enter Email Address!</Button>
-                    </Fragment>
-                }
-            </div>
-        )
+    return (
+        <div >
+            {showForm ? this.renderForm()
+                : <Fragment>
+                    <h3>Hi, {name}</h3>
+                    <Button onClick={toggleShowForm} >Enter Email Address!</Button>
+                </Fragment>
+            }
+        </div>
+    )
 }
 
 export default ExampleComponent
-
