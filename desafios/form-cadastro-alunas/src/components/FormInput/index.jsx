@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const alunas = JSON.parse(localStorage.getItem('list_alunas')) || [];
+
 class FormInput extends Component {
     constructor(props) {
         super(props);
@@ -13,11 +15,16 @@ class FormInput extends Component {
         }
     
         this.state = this.stateInicial;
-    }
-
+    }    
+    
     escutadorDeInput = event => {
         const { name, value } = event.target;
         this.setState({ [name]: value });
+    }
+            
+    addAlunas(aluna) {
+        localStorage.setItem('list_alunas', JSON.stringify(aluna));
+        this.setState({ name: "", city: "", email: "", cpf: "", phone: "" })
     }
 
     render() {
@@ -29,7 +36,7 @@ class FormInput extends Component {
                 <label>nome completo</label><br/>
                 <input
                     type="text"
-                    name="nome"
+                    name="name"
                     value={name}
                     onChange={this.escutadorDeInput}/>
                 <p/>
@@ -37,7 +44,7 @@ class FormInput extends Component {
                 <label>cidade</label><br/>
                 <input 
                     type="text"
-                    name="cidade"
+                    name="city"
                     value={city}
                     onChange={this.escutadorDeInput}/>
                 <p/>
@@ -68,6 +75,11 @@ class FormInput extends Component {
                     placeholder="(xx) xxxxx-xxxx"
                     onChange={this.escutadorDeInput} />
                 <p/>
+
+                <button
+                    onClick={() => this.addAlunas(this.state)}
+                    type="button">Inscrever
+                </button>
             </form>
         );
     }
