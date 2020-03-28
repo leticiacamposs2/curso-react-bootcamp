@@ -8,6 +8,7 @@ class SubmitButton {
     valida(state) {
 
         let contador = 0;
+        let mensagens = [];
         const tamanho = this.validacao.length;
 
         for (let i = 0; i < tamanho; i++) {
@@ -16,12 +17,12 @@ class SubmitButton {
             const metodoValidacao = validador[this.validacao[i].metodo];
 
             if (metodoValidacao(campoValor, [], state)) {
-                console.log('Mensagem de erro:', this.validacao[i].mensagem);
+                mensagens.push(this.validacao[i].mensagem);
                 contador++;
             }
         }
 
-        return contador > 0 ? false : true;
+        return contador > 0 ? mensagens : true;
     }
 
 }

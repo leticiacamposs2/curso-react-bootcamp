@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import SubmitButton from '../SubmitButton';
 
 class FormInput extends Component {
+
+    mensagens = [];
+
     constructor(props) {
         super(props);
         
@@ -11,7 +14,8 @@ class FormInput extends Component {
             city: "",
             email: "",
             cpf: "",
-            phone: ""
+            phone: "",
+            msgError: false
         }
     
         this.state = this.stateInicial;
@@ -21,31 +25,31 @@ class FormInput extends Component {
                 campo: 'name',
                 metodo: 'isEmpty',
                 validoQuando: false,
-                mensagem: 'Informe um nome'
+                mensagem: 'nome, '
             },
             {
                 campo: 'city',
                 metodo: 'isEmpty',
                 validoQuando: false,
-                mensagem: 'Informe uma cidade'
+                mensagem: 'cidade, '
             },
             {
                 campo: 'email',
                 metodo: 'isEmpty',
                 validoQuando: false,
-                mensagem: 'Informe um e-mail'
+                mensagem: 'e-mail, '
             },
             {
                 campo: 'cpf',
                 metodo: 'isEmpty',
                 validoQuando: false,
-                mensagem: 'Informe um CPF'
+                mensagem: 'CPF, '
             },
             {
                 campo: 'phone',
                 metodo: 'isEmpty',
                 validoQuando: false,
-                mensagem: 'Informe um telefone'
+                mensagem: 'telefone '
             },
         ]);
     }    
@@ -56,18 +60,27 @@ class FormInput extends Component {
     }
             
     addAlunas(aluna) {
-        if (this.validator.valida(aluna)) {
+        if (!this.validator.valida(aluna)) {
             localStorage.setItem('list_alunas', JSON.stringify(aluna));
-            this.setState({ name: "", city: "", email: "", cpf: "", phone: "" })
+            this.setState({ name: "", city: "", email: "", cpf: "", phone: "", msgError: false })
+        } else {
+            this.mensagens = [];
+            this.mensagens.push(this.validator.valida(aluna));
+            this.setState({ msgError: true })
         }
     }
 
     render() {
 
-        const { name, city, email, cpf, phone } = this.state;
+        const { name, city, email, cpf, phone, msgError } = this.state;
 
         return (
             <form>
+                { msgError ? 
+                    <span>** Por favor, preencha o(s) campo(s): {this.mensagens[0]}</span> 
+                    : ''}
+                <p/>
+
                 <label>nome completo</label><br/>
                 <input
                     type="text"
