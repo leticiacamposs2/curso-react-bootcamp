@@ -17,16 +17,15 @@ Repositório com o conteúdo das aulas.
 
 ## ♨️ Desafios
 
-- [ ] **Desafio 1**: studio-ghibli-challenge - (07/03)
-- [ ] **Desafio 2**: todo-list-challenge - (07/03)
-- [ ] **Desafio 3**: react-router - (14/03)
-- [ ] **Desafio 4**: consumir API com autentificação - (14/03)
-
----
-
-## 🎥 Hangouts
-
-- [ ] **Consumir API CEP** (Class) - (04/03)
+- [ ] **Desafio 1**: Formulário de cadastro de alunas
+- [ ] **Desafio 2**: Formulário de CEP
+- [ ] **Desafio 3**: Consumir API do estudio Ghibli
+- [ ] **Desafio 4**: Refatorar um componente de classe para função
+- [ ] **Desafio 5**: Fazer uma todo list com redux
+- [ ] **Desafio 6**: React router
+- [ ] **Desafio 7**: Consumir uma API com autenticação
+- [ ] **Desafio 8**: Currículos de devs para speed hiring
+- [ ] **Desafio 9**: Criar um formulário usando o formik hook
 
 ---
 
