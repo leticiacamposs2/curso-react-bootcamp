@@ -72,4 +72,4 @@ class ExampleComponent extends Component {
 export default ExampleComponent
 ```
 
-[Resultado final](./me-transforme-em-função.js) 
+[Resultado final](./me-transforme-em-funcao.js) 
