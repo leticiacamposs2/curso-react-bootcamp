@@ -2,6 +2,16 @@
 
 Fazer um formulário de cadastro de alunas e validar se todos os campos estão preenchidos antes de dar submit, caso não esteja deve exibir a mensagem para o usuário.
 
+![form-cadastro-alunas](./src/assets/form-cadastro-alunas.png)
+
+****
+
+## 🔧 Funcionalidades:
+
+1. Validação de campo vazio, notificando o usuário
+2. Só permite o cadastro da aluna, quando todos os campos tiver preenchido
+2. Gravação do cadastro na localStorage do navegador
+
 ****
 
 ## 🚀 Rodando o projeto localmente
