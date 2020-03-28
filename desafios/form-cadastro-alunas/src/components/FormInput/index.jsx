@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FormInput = () => ({ label, value, name, inputType, placeholder}) => {
+
     return (
         <div>
             <label>{label}</label>
