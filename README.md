@@ -17,7 +17,7 @@ Repositório com o conteúdo das aulas.
 
 ## ♨️ Desafios
 
-- [ ] **Desafio 1**: [Formulário de cadastro de alunas](./desafios/form-cadastro-alunas)
+- [x] **Desafio 1**: [Formulário de cadastro de alunas](./desafios/form-cadastro-alunas)
 - [ ] **Desafio 2**: Formulário de CEP
 - [ ] **Desafio 3**: Consumir API do estudio Ghibli
 - [ ] **Desafio 4**: Refatorar um componente de classe para função
