@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const alunas = JSON.parse(localStorage.getItem('list_alunas')) || [];
+import SubmitButton from '../SubmitButton';
 
 class FormInput extends Component {
     constructor(props) {
@@ -15,6 +15,39 @@ class FormInput extends Component {
         }
     
         this.state = this.stateInicial;
+
+        this.validator = new SubmitButton([
+            {
+                campo: 'name',
+                metodo: 'isEmpty',
+                validoQuando: false,
+                mensagem: 'Informe um nome'
+            },
+            {
+                campo: 'city',
+                metodo: 'isEmpty',
+                validoQuando: false,
+                mensagem: 'Informe uma cidade'
+            },
+            {
+                campo: 'email',
+                metodo: 'isEmpty',
+                validoQuando: false,
+                mensagem: 'Informe um e-mail'
+            },
+            {
+                campo: 'cpf',
+                metodo: 'isEmpty',
+                validoQuando: false,
+                mensagem: 'Informe um CPF'
+            },
+            {
+                campo: 'phone',
+                metodo: 'isEmpty',
+                validoQuando: false,
+                mensagem: 'Informe um telefone'
+            },
+        ]);
     }    
     
     escutadorDeInput = event => {
@@ -23,8 +56,10 @@ class FormInput extends Component {
     }
             
     addAlunas(aluna) {
-        localStorage.setItem('list_alunas', JSON.stringify(aluna));
-        this.setState({ name: "", city: "", email: "", cpf: "", phone: "" })
+        if (this.validator.valida(aluna)) {
+            localStorage.setItem('list_alunas', JSON.stringify(aluna));
+            this.setState({ name: "", city: "", email: "", cpf: "", phone: "" })
+        }
     }
 
     render() {
