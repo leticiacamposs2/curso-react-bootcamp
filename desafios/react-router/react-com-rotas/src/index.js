@@ -7,8 +7,8 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    [<App />,<Sobre />]
-  </React.StrictMode>,
+    {(window.location.pathname === '/sobre') ? <Sobre /> : <App />}      
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
