@@ -1,4 +1,4 @@
-# ♨️ Desafio 1 - Formulário de cadastro de alunas
+# 🤯 Desafio 1 - Formulário de cadastro de alunas
 
 Fazer um formulário de cadastro de alunas e validar se todos os campos estão preenchidos antes de dar submit, caso não esteja deve exibir a mensagem para o usuário.
 

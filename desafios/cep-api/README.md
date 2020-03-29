@@ -1,4 +1,4 @@
-## ♨️ Desafio
+## 🤯 Desafio
 
 - **Formulário de CEP** (Class) - (04/03)
 

@@ -15,7 +15,7 @@ Repositório com o conteúdo das aulas.
 
 ---
 
-## ♨️ Desafios
+## 🤯 Desafios
 
 - [x] **Desafio 1**: [Formulário de cadastro de alunas](./desafios/form-cadastro-alunas)
 - [ ] **Desafio 2**: Formulário de CEP

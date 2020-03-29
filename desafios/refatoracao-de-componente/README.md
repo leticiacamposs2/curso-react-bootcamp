@@ -1,4 +1,4 @@
-# ♨️ Desafio 4: Refatorar um componente de classe para função
+# 🤯 Desafio 4: Refatorar um componente de classe para função
 
 Refatorar o fonte abaixo "me-transforme-em-função.js" seguindo boas práticas e técnicas de hooks
 

@@ -1,4 +1,4 @@
-# ♨️ Desafio 9: Criar um formulário usando o formik hook
+# 🤯 Desafio 9: Criar um formulário usando o formik hook
 
 Conforme o artigo: [Formik hooks — API oficial! 🎉](https://medium.com/@yuriwtoledo/formik-hooks-api-oficial-a79f803970a1)
 

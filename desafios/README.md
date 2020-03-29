@@ -1,4 +1,4 @@
-# ♨️ Desafios
+# 🤯 Desafios
 
 - [x] **Desafio 1**: [Formulário de cadastro de alunas](./form-cadastro-alunas)
 - [ ] **Desafio 2**: Formulário de CEP
