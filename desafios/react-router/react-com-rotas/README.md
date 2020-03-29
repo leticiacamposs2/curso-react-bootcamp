@@ -10,8 +10,6 @@ Seguindo o tutorial do [CollabCode](https://medium.com/collabcode/roteamento-no-
 
 ****
 
-****
-
 ## 🚀 Rodando o projeto localmente
 
 ****
