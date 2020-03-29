@@ -1,11 +1,9 @@
 import { CLICK_UPDATE_VALUE } from './actionTypes';
 
-const clickButton = value => ({
+export const clickButton = value => ({
     type: CLICK_UPDATE_VALUE,
     newValue: value
 });
-
-export default clickButton;
 
 // Aqui a função é a Action Creator, e o que ela retorna, que é o objeto, é a Action. 
 // Ao ser disparada, ela comunicará ao Reducer que o type é CLICK_UPDATE_VALUE, 
