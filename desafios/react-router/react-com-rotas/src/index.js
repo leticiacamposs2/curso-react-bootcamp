@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import App from './App';
 import Sobre from './Sobre';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    {(window.location.pathname === '/sobre') ? <Sobre /> : <App />}      
-    </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact={true} component={App} />
+      <Route path="/sobre" component={Sobre} />
+    </Switch>
+  </ BrowserRouter>
+  , document.getElementById('root')
 );
 
 serviceWorker.unregister();
