@@ -4,7 +4,7 @@ const initialState = {
     newValue: ''
 }
 
-const clickReducer = (state = initialState, action) => {
+export const clickReducer = (state = initialState, action) => {
     switch(action.type) {
         case CLICK_UPDATE_VALUE:
             return {
@@ -15,8 +15,6 @@ const clickReducer = (state = initialState, action) => {
                 return state;
     }
 }
-
-export default clickReducer;
 
 // IMPORTANTE: esta função deverá ser pura, ou seja, 
 // retornar um novo objeto, pois lembrando, a Store é imutável. 

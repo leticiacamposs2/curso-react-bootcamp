@@ -18,7 +18,7 @@ Nesta aula iniciamos os estudos sobre redux, seguindo o exemplo deste artigo: [I
 
 ## ⚠️ Pré-requisitos:
 
-1. Node.js e Yarn instalado
+1. Node.js e NPM instalado
 
 ****
 
@@ -37,13 +37,13 @@ cd curso-react-bootcamp/aula-4-lets-context-everything/create-react-redux
 3. Instale todas as dependências do projeto
 
 ```sh
-yarn install
+npm install
 ```
 
 4. Rode o projeto na sua máquina
 
 ```sh
-yarn start
+npm start
 ```
 
 5. Abre o navegador e visualize o projeto
