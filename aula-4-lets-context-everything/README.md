@@ -1,7 +1,11 @@
-# Let's context everything
+# 📋 Let's context everything
 
-Vimos como funciona o contexto no React e começamos a mexer com Redux.
+Nesta aula aprendemos sobre contexto no React e iniciamos os estudos sobre redux.
 
-link para a os [slides](https://docs.google.com/presentation/d/1qo0z5L5vHOyf7PySLKop0dOObrOvDtnyb7lqihAYSeI/edit?usp=sharing)
+***
 
-link para o github da professora com algum conteúdo da aula [github](https://github.com/brenndafarinha/context-api-react)
+## 📜 Conteúdo:
+
+1. [Contexto em React](./context-api-react)
+2. [Aprendendo sobre redux](./create-react-redux)
+3. [Slides da aula](./../material-aulas/aula-4-lets-context-everything.pptx)
