@@ -19,7 +19,7 @@ Repositório com o conteúdo das aulas.
 
 - [x] **Desafio 1**: [Formulário de cadastro de alunas](./desafios/form-cadastro-alunas)
 - [ ] **Desafio 2**: Formulário de CEP
-- [ ] **Desafio 3**: [Consumir API do estudio Ghibli](./desafios/studio-ghibli-challenge)
+- [x] **Desafio 3**: [Consumir API do estudio Ghibli](./desafios/studio-ghibli-challenge)
 - [x] **Desafio 4**: [Refatorar um componente de classe para função](./desafios/refatoracao-de-componente)
 - [x] **Desafio 5**: [Fazer uma todo list com redux](./desafios/todo-list-challenge)
 - [x] **Desafio 6**: [React router](./desafios/react-router)
