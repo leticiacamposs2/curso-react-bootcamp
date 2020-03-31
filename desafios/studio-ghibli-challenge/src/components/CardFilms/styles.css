@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 
+.teste {
+  height: 290px; 
+}
+
 .card-deck {
   float: left;
   margin: 0 auto;

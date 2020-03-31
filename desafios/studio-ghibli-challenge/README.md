@@ -32,11 +32,6 @@ Com o projeto na sua máquina, entre na máquina e execute:
 
 `npm install OU yarn install`
 
-## Extra
-
-Utilizar rotas em React, implementando uma página de detalhes para cada filme. 
-O esperado é que ao clicar em um card o usuário seja direcionado para a página de detalhes do filme. Se necessário pode consumir outros endpoints da API para popular essa tela.
-
 ### Referências
 
 Esse layout foi elaborado pela [@taniarascia](https://github.com/taniarascia).
