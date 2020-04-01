@@ -1,6 +1,6 @@
 import React from 'react';
 import Giphy from '../Giphy';
-
+import './style.css';
 class Home extends React.Component {
     constructor(props) {
         super(props)
@@ -31,8 +31,8 @@ class Home extends React.Component {
         const { search } = this.state;
 
         return (
-            <>
-                <label>Pesquise um gif: </label>
+            <div className="search">
+                <h1><label>Pesquise um GIF</label></h1>
                 <input
                     type="text"
                     name="search"
@@ -40,7 +40,7 @@ class Home extends React.Component {
                     onChange={this.inputText} />
                 <button onClick={this.handleClick}>Pesquisar</button>
                 {this.state.clicked ? <Giphy search={search}/> : null}
-            </>
+            </div>
         );
     }
 };

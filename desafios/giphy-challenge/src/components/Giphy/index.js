@@ -22,13 +22,13 @@ function Giphy(props) {
     }, [query])
 
     return (
-        <div>
+        <>
             { gifs
                 && gifs.data.map(gif => {
                     return <Gif key={gif.id} gif={gif} width={200} />
                 })
             }
-        </div>
+        </>
     )
 
 }

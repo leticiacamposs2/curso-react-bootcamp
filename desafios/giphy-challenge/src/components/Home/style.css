@@ -1,0 +1,8 @@
+.search {
+  background-image: url("giphy-phone.jpg");
+  background-repeat: no-repeat, repeat;
+  color: white;
+  padding: 40px;
+  font-family: Courier New, monospace;
+  text-align: center;
+}
