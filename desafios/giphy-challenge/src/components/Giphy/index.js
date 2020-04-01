@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Gif } from "@giphy/react-components";
 
 function Giphy(props) {
+
     const [gifs, setGifs] = useState(null);
     const key = 'cUdC5Slzcn5tlczQGYIuGpBPLWGEdAc5'
-    const query = 'dogs'
+    const query = props.search
     const limit = 5
 
     useEffect(() => {
