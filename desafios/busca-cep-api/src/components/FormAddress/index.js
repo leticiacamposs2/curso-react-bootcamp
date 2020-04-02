@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
     Form,
     FormGroup,
@@ -10,7 +9,7 @@ import {
     Col,
 } from 'reactstrap';
 
-const FormCep = (props) => {
+const FormAddress = (props) => {
     const { cep, logradouro, bairro, localidade, uf } = props
 
     return (
@@ -60,4 +59,4 @@ const FormCep = (props) => {
     );
 }
 
-export default FormCep;
+export default FormAddress;

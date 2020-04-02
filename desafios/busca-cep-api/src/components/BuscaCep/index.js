@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import FormCep from '../FormCep';
+import FormAddress from '../FormAddress';
 
 const BuscaCep = (props) => {
-
+    
     const [address, setAddress] = useState([]);
     const cep = '04551010'
 
@@ -16,7 +16,7 @@ const BuscaCep = (props) => {
     }, [])
 
     return (
-        <FormCep cep={address.cep} 
+        <FormAddress cep={address.cep} 
             logradouro={address.logradouro} 
             bairro={address.bairro}
             localidade={address.localidade}
