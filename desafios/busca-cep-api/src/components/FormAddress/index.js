@@ -10,20 +10,13 @@ import {
 } from 'reactstrap';
 
 const FormAddress = (props) => {
-    const { cep, logradouro, bairro, localidade, uf } = props
+    const { logradouro, bairro, localidade, uf } = props
 
     return (
         <Container>
             <Row>
                 <Col sm="12" md={{ size: 6, offset: 3 }}>
                     <Form style={{ textAlign: 'left' }}>
-                        <FormGroup>
-                            <Label for="cep">CEP</Label>
-                            <Input
-                                name="cep"
-                                value={cep}
-                            />
-                        </FormGroup>
                         <FormGroup>
                             <Label for="logradouro">Logradouro</Label>
                             <Input

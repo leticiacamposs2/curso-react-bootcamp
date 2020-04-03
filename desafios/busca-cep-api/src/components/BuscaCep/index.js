@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import FormAddress from '../FormAddress';
 
 const BuscaCep = (props) => {
-    
+
+    const { cep } = props
     const [address, setAddress] = useState([]);
-    const cep = '04551010'
 
     useEffect( () => {
         fetch(`http://viacep.com.br/ws/${cep}/json/`)
@@ -16,7 +16,7 @@ const BuscaCep = (props) => {
     }, [])
 
     return (
-        <FormAddress cep={address.cep} 
+        <FormAddress 
             logradouro={address.logradouro} 
             bairro={address.bairro}
             localidade={address.localidade}

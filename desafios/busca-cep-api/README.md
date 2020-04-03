@@ -5,7 +5,17 @@ Criar um formulário de CEP que preenche todos os campos quando a API responde o
 ****
 ## 🎨 Layout
 
-![busca-cep-api](./src/assets/buscaCep.png)
+1. Insira o CEP e clique em pesquisar:
+
+![busca-cep-pesquisa](./src/assets/busca-cep-pesquisa.png)
+
+-----
+
+2. O resultado da pesquisa é renderizado:
+
+![busca-cep-resposta](./src/assets/busca-cep-resposta.png)
+
+Obs: Ainda não tem validação.
 
 ****
 
