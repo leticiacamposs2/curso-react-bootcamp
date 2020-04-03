@@ -34,3 +34,9 @@ Repositório com o conteúdo das aulas.
 **CV Speed Hiring** [em progresso](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
 
 ---
+
+## 🔥 Cursos complementares
+
+** Node.js para Iniciantes By #NodeBR! ** [em progresso](https://github.com/leticiacamposs2/node-js-para-iniciantes)
+
+---
