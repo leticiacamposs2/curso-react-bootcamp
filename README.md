@@ -1,4 +1,4 @@
-# React bootcamp @WoMakersCode 💖
+# React bootcamp @WoMakersCode 🦋
 
 Repositório com o conteúdo das aulas.
 
