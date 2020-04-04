@@ -1,8 +1,9 @@
 import video from './Movies';
 
 test('plays video', () => {
-    const spy = jest.spyOn(video, 'play');
+    const spyPlay = jest.spyOn(video, 'play');
     video.play();
 
-    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spyPlay).toHaveBeenCalled(); //so quero que seja chamado independente da quantidade de vezes
+    // expect(spyPlay).toHaveBeenCalledTimes(1); //espero que seja chamado 2 vezes
 });
