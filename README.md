@@ -11,7 +11,8 @@ Repositório com o conteúdo das aulas.
 3.  [Lets input react](./aula-3-lets-input-react)
 4.  [Lets context everything](./aula-4-lets-context-everything)
 5.  [Lets request data](./aula-6-lets-request-data)
-6.  [Material das aulas](./material-aulas)
+6.  [Lets test react](./aula-8-lets-test-react)
+7.  [Material das aulas](./material-aulas)
 
 ---
 
