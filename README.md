@@ -1,4 +1,4 @@
-# React bootcamp @WoMakersCode 💖
+# React bootcamp 🦋 @WoMakersCode
 
 Repositório com o conteúdo das aulas.
 
@@ -32,5 +32,13 @@ Repositório com o conteúdo das aulas.
 ## 🎓 Projeto final
 
 **CV Speed Hiring** [em progresso](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
+
+---
+
+## 🔥 Cursos complementares
+
+- [x] Desenvolver aplicativos Web com o Visual Studio Code
+- [x] Introdução ao controle de versão com o Git
+- [ ] [Node.js para Iniciantes By #NodeBR](https://github.com/leticiacamposs2/node-js-para-iniciantes)
 
 ---
