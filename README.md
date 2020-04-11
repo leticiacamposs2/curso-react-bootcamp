@@ -40,6 +40,6 @@ Repositório com o conteúdo das aulas.
 
 - [x] Desenvolver aplicativos Web com o Visual Studio Code
 - [x] Introdução ao controle de versão com o Git
-- [ ] [Node.js para Iniciantes By #NodeBR](https://github.com/leticiacamposs2/node-js-para-iniciantes)
+- [x] [Node.js para Iniciantes By #NodeBR](https://github.com/leticiacamposs2/node-js-para-iniciantes)
 
 ---
