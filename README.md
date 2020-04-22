@@ -30,6 +30,20 @@ Repositório com o conteúdo das aulas.
 
 ---
 
+## ⚙ Tecnologias utilizadas
+
+- React
+- React Router
+- Redux
+- Formik
+- Material UI
+- Jest
+- HOCs
+- Hooks
+- FetchAPI e Axios
+
+---
+
 ## 🎓 Projeto final
 
 **CV Speed Hiring** [em progresso](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
