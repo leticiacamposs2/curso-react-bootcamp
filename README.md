@@ -25,7 +25,7 @@ Repositório com o conteúdo das aulas.
 - [x] **Desafio 5**: [Fazer uma todo list com redux](./desafios/todo-list-challenge)
 - [x] **Desafio 6**: [React router](./desafios/react-router)
 - [x] **Desafio 7**: [Consumir uma API com autenticação](./desafios/giphy-challenge)
-- [ ] **Desafio 8**: [Currículos de devs para speed hiring](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
+- [X] **Desafio 8**: [Currículos de devs para speed hiring](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
 - [x] **Desafio 9**: [Criar um formulário usando o formik hook](./desafios/formik-hooks)
 
 ---
@@ -46,7 +46,7 @@ Repositório com o conteúdo das aulas.
 
 ## 🎓 Projeto final
 
-**CV Speed Hiring** [em progresso](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
+[**CV Speed Hiring**](https://github.com/React-Bootcamp-WoMarkersCode/cv-speed-hiring)
 
 ---
 
